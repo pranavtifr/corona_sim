@@ -5,9 +5,9 @@
    - Initially 10 particles are infected
    - Particles spread infection with 100% probability when too close
    - Noone Dies or recovers
+   - At each time step 10% probability to recover and 0.4% probability to die
      
 **  To - Do
-   - Death and recovery
    - Social Distancing with a force law
 
 ** Results
