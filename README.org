@@ -1,0 +1,14 @@
+* Corona Virus Simulation
+**  Rules of the Simulation
+   - Periodic Boundary Conditions
+   - Non Interacting particles with fixed velocities
+   - Initially 10 particles are infected
+   - Particles spread infection with 100% probability when too close
+   - Noone Dies or recovers
+     
+**  To - Do
+   - Death and recovery
+   - Social Distancing with a force law
+
+** Results
+    [[infected.png]] 
