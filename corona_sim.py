@@ -21,9 +21,9 @@ def velocity_perturbation(xx, maxvel=5):
 
 # Let's set the parameters
 # ------------------------------
-N = 1000
+N = 500
 box = 10.0  # Size of our box
-tmax = 5.0  # Final time
+tmax = 2.0  # Final time
 nsteps = 3000
 npart = 1000
 nvel = 1
@@ -68,8 +68,9 @@ for _ in tqdm.tqdm(np.arange(0, nsteps)):
 
 # ani = animation.ArtistAnimation(fig, ims, interval=50, blit=True, repeat_delay=1000)
 # ani.save("phase_space_1.mp4")
-plt.plot(infected)
+plt.plot(np.linspace(0, tmax, nsteps), infected)
 plt.xlabel("time")
 plt.ylabel("infected")
+plt.yscale("log")
 plt.savefig("infected.png", format="png")
 plt.show()
